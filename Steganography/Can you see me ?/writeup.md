@@ -12,7 +12,7 @@
 ### Pass
 > cookiehanhoan
 ### Tool
-> aperisolve.com, pngcheck, hexed.it
+> aperisolve.com, pngcheck, hexed.it, python script
 ### FLAG
 >EHC{b1n4ry_1s_f4nt4st1c}
 ### SOLVED
@@ -64,4 +64,6 @@ Paste the value onto __Cyberchef__ using __From decimal__ and __To hex__, yo
 ![image](https://github.com/user-attachments/assets/9d07d083-9203-4aa3-8238-3284377a9d95)
 
 But once again, it's being cut by the 0x00 byte. So use the previous script (__Remove0.py__) to delete it and get the .zip file. But once you extract the file, it prompts for password input. OH!! Using the comment from the original image for the password you will get the flag.txt containing the flag.
+
+> Source tham khảo: [File signature](https://en.wikipedia.org/wiki/List_of_file_signatures) 
 #### END!!
