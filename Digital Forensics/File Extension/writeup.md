@@ -23,7 +23,7 @@ Use the __file__ command to determine exactly what it is.
 ```
 file girl-xinh.jpg
 ```
-It actually a __PE execuable file.
+It is a __PE executable__ file.
 ![image](https://github.com/user-attachments/assets/6bd1ab58-5878-4f68-b1ee-a1c6fc4e4420)
 
 Copy it to a Windows machine and run it using cmd and you will get the flag.
