@@ -9,7 +9,7 @@
 ### DIFFICULTY
 >easy
 ### Pass
-cookiehanhoan
+>cookiehanhoan
 ### Tool
 >Linux, cmd
 ### FLAG
