@@ -26,7 +26,7 @@ file girl-xinh.jpg
 It is a __PE executable__ file.
 ![image](https://github.com/user-attachments/assets/6bd1ab58-5878-4f68-b1ee-a1c6fc4e4420)
 
-Copy it to a Windows machine and run it using cmd and you will get the flag.
+Copy it to a Windows machine and run it using __cmd__ and you will get the flag.
 
 #### END!!
 
