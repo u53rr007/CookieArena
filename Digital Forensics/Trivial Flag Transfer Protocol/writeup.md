@@ -39,7 +39,8 @@ There is a __plan__ file. Open it and it seems to be another ROT13 cipher.
 
 So the instructions tell us to check out those 3 __.bmp__ files. But after a whole bunch of time trying to extract the metadata, and hex out of it nothing can be found.
 There is a __program.deb__ file left untouched. After opening and inspecting further, it seemed like a __steghide__ library but nothing interesting was found. But look back at the __plan__ instruction you can see something sus.
-The word __DUEDILIGENCE__.
+
+The word __DUEDILIGENCE__!!
 
 ![image](https://github.com/user-attachments/assets/871c3c80-39e9-45ca-9174-62c5402a37a3)
 
