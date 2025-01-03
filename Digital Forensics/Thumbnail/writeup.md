@@ -16,7 +16,7 @@
 ### FLAG
 >CHH{3XTrac7_ThumB5.dB}
 ### SOLVED
-Download the file and you get a thumbs.db file and based on the description you will understand what is this file's purpose. So try to extract the thumbnail stored inside that database using __thumbsviewer__. After searching through some images you will see the image with the flag.
+Download the file and you get a thumbs.db file and based on the description you will understand what is this file's purpose. So try to extract the thumbnails stored inside that database using __thumbsviewer__. After searching through some images you will see the image with the flag.
 ![image](https://github.com/user-attachments/assets/91a14ae0-9e47-4c02-bbbf-db3afd5277ea)
 
 #### END!!
