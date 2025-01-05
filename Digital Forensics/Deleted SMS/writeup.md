@@ -36,6 +36,5 @@ As you can see it was some hint related to our flag. But as I dig deeper nothing
 
 ![image](https://github.com/user-attachments/assets/669971fe-296e-4a98-9022-59f6d0802a45)
 
- It seems like our flag format. I put that on __CyberChef__ and deciphered it using __ROT13__ and IT IS THE FLAG!
-
+ It seems like our flag format. I put that on __CyberChef__ and deciphered it using __ROT13__ and IT IS THE FLAG! So it is easy to use __hexedit__ in the first place.
 #### END!!
