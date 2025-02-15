@@ -1,0 +1,18 @@
+# Base64 encoded string
+$Base64String = "TVFva4JAGP8qh7hxx/IwzbaSBZtsKwiLGexFhJg+pMs09AmL6rvP03S9uoe739/nZD+OIEHySmwolNn6F3wkzilH2HEbkDupvwXM+cKaWxWSSt2Bxrv9F64ZOteepU5vYOjMlHPMwNuVQnItyb8AneqOMnO5PiEsVytZnHkJUjnvG4ZuXB7O6tUswigGSuVI0Gsh/g1eQGt8h6gdUo98CskGQ8aIkgBR2dmUAw+9kkfvCiiL0x5sbwdNlQUckb851mTykfhpECUbdstXjo2LMIlEE0iCtedvhWgER1I7aKPHLrmQ2QGVmkbuoFoVvOE9Eckaj8+26vbcTeomqptjL3OLUM/0q1Q+030RMD73MBTYEZFuSmUMYbpEERduSVfDYZW8SvwuktJ/33bx/CeLEGirU7Zp52ZpLfYzPuQhZVez+SsrTnOg7A8="
+
+# Decode Base64
+$DecodedBytes = [System.Convert]::FromBase64String($Base64String)
+
+# Decompress Deflate data
+$MemoryStream = New-Object System.IO.MemoryStream(,$DecodedBytes)
+$DeflateStream = New-Object System.IO.Compression.DeflateStream($MemoryStream, [System.IO.Compression.CompressionMode]::Decompress)
+$StreamReader = New-Object System.IO.StreamReader($DeflateStream, [System.Text.Encoding]::ASCII)
+$DecompressedText = $StreamReader.ReadToEnd()
+
+# Write to a text file
+$OutputFile = "output.txt"
+$DecompressedText | Out-File -Encoding ASCII -FilePath $OutputFile
+
+# Display confirmation
+Write-Output "Decoded output saved to: $OutputFile"
