@@ -19,7 +19,7 @@
 ### FLAG
 >CHH{N0_4_go_n0_st4r_wh3r3}
 ### SOLVED
-So download the zip file and you get the NTUSER.DAT file. Do a little research and you will find out that it is used to store user profile settings from the Windows registry. 
+So download the zip file and you get the NTUSER.DAT file. Do a little research and you will find out that it stores user profile settings from the Windows registry. 
 ![image](https://github.com/user-attachments/assets/5214804f-eb55-499e-95f5-52c78d4c1004)
 
  Continue to use the __regRipper__ to extract forensic artifacts from Windows Registry hives to a report.txt file. After that take a look at the report and I stumbled upon the powershell.exe that being set autorun with a sus obfuscation script. A brief analysis of the script: This PowerShell script is obfuscated something that extracts, decompresses, and executes hidden code.
