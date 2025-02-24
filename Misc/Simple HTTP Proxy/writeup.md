@@ -30,3 +30,5 @@ __P/S__: The funny part is that I stuck at the last check of the __if request.fo
 "userid=admin"   ❌
 
 "userid=admin "  ✅
+
+>Ref: [Server-side request forgery](https://portswigger.net/web-security/ssrf)
