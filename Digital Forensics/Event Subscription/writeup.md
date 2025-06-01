@@ -16,7 +16,7 @@
 ### FLAG
 >CHH{WMI_Th3_5te4lthy_c0mP0n3Ntt}
 ### SOLVED
-Download the file and you get the Repository folder inside, which contains a bunch of files that I don't know. So I tried to google it to find anything. With a simple search "What is index.BTR file" I found this:
+Download the file and you get the Repository folder inside, which contains a bunch of files that I don't know. So I tried to google it to find anything related to OBJECT.DATA or INDEX.BTR. With a simple search "What is index.BTR file" I found this:
 
 ![{97A5731F-787B-4461-8AAD-34D9B5979D0F}](https://github.com/user-attachments/assets/aa593cee-2f77-4c39-9374-f243d54f2fee)
 
@@ -25,7 +25,7 @@ So this is a Windows Management Instrumentation (WMI) repo in Windows. Then I lo
 
 ![{417F63FC-00A3-4BC7-9CEB-78D8345EFC73}](https://github.com/user-attachments/assets/29648c5c-64fe-498d-8865-19ba9d09bd0d)
 
-Inside we will have an interesting Python script that can help us: PyWMIPersistenceFinder.py. Scroll down to look for the usage of this script. That easy we already have the OBJECT.DATA file.
+Inside we will have an interesting Python script that can help us: PyWMIPersistenceFinder.py. Scroll down to look for the usage of this script. That easy, we already have the OBJECT.DATA file.
 
 ![{3A60E14F-D142-48E4-818A-B983114E74A4}](https://github.com/user-attachments/assets/a7ab7351-45bc-4126-bcb6-c378d41c07b8).
 
@@ -41,7 +41,6 @@ The output you get will have a bunch of text and there is 1 consumer that has a 
 I immediately realized that it was a base64 encode but if you can't you can simply Google to find out what encode type to use with the PowerShell flag "-e". [Powershell](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_powershell_exe?view=powershell-5.1).
 
 ![{4F2A3A18-3FA9-4CC5-B859-57033EDD7B3E}](https://github.com/user-attachments/assets/18db3fd1-687e-4e3b-87c7-f40eb78e50a9)
-
 
 Use Cyberchef or any base64 decode tool to decode that string and you will get the flag BUT with null bytes separate them apart so delete those bytes or use the "Remove null bytes" options in Cyberchef.
 ### END!!
