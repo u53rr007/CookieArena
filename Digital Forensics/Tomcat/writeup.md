@@ -41,7 +41,7 @@ After the reverse shell connection is established, observe other packets to see 
 
 <img width="1536" height="795" alt="image" src="https://github.com/user-attachments/assets/f3fe7fce-5b36-40e0-ab27-2411565268e6" />
 
- Filter by port 4444 and "Follow TCP Stream", to TCP stream #39, see the attacker running cat flag.txt; the content is Base64 encoded — decoded to flag.
+ Filter by port 4444 and "Follow TCP Stream", to TCP stream #39, see the attacker running cat flag.txt; the content is Base64 encoded — decoded to get the flag.
  ```
 tcp.srcport == 4444 || tcp.dstport == 4444
 ```
